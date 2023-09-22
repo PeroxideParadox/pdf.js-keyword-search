@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Search and Download</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <style>
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+
+       
+        #search-form {
+            margin-bottom: 20px;
+        }
+
+        #search-input {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 50px;
+            
+        }
+
+        #search-button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+       
+        .pdf-result {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: inline-block;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .pdf-result a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 8px;
+        }
+
+        .pdf-result img {
+            width: 100px;
+            height: 75px;
+        }
+
+        
+        .case-number {
+            font-weight: bold;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Specific Keyword Search in PDF </h1>
+
+   
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter keyword">
+        <button type="submit" id="search-button">Search</button>
+    </form>
+
+    
+    <div id="pdf-results"></div>
