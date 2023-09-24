@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH - PDF Search</title>
+    <!-- Include PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        /* Add your CSS styles for search form and results container */
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h1>Specific Keyword Search in PDF</h1>
+
+        <!-- Search Form -->
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter keyword">
+            <button type="submit" id="search-button">Search</button>
+        </form>
+
+        <!-- Results Container -->
+        <div id="pdf-results"></div>
+    </div>
+
+    <!-- Include the separate JavaScript file -->
+    <script src="search.js"></script>
+</body>
+</html>
